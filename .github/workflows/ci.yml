@@ -27,3 +27,6 @@ jobs:
 
       - name: Run flake8
         run: python -m flake8 generator tests main.py
+
+      - name: Build Docker image
+        run: docker build -t password-generator .
